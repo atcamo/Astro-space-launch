@@ -8,46 +8,44 @@ npm create astro@latest -- --template basics
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Astro Demo
+This project is a demo of the Astro framework, a lightweight and modern static site generator for building fast websites and web applications.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Installation
+To run this project locally, you'll need to have Node.js and npm installed on your machine. Then, follow these steps:
 
-## 🚀 Project Structure
+Clone this repository to your local machine.
+Navigate to the project directory in your terminal.
+Run npm install to install the project dependencies.
+Run npm run dev to start the development server.
+Usage
+Once the development server is running, you can view the demo site in your browser at http://localhost:4321.
 
-Inside of your Astro project, you'll see the following folders and files:
+The project structure is as follows:
 
-```text
-/
-├── public/
-│   └── favicon.svg
+
+
+
+astro-demo/
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+│   ├── pages/
+│   ├── styles/
+│   ├── _astro/
+│   ├── _output/
+│   └── index.astro
+├── static/
+├── package.json
+└── README.md
+The src directory contains the source code for the demo site, including the Astro components, pages, and styles. The _astro directory contains configuration files for Astro, and the _output directory is where the generated site is outputted.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Contributing
+If you'd like to contribute to this project, please fork the repository and create a pull request with your changes.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+That's it! Let me know if you have any questions.
 
 ## 👀 Want to learn more?
 
