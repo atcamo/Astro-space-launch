@@ -1,38 +1,45 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
 import Header from '../components/Header.astro';
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="bg-gray-900 min-h-screen pb-32">
-		<Header/>
-		<main class="max-w-5xl px-4 m-auto">
-			<slot />
-		</main>
-	</body>
-</html>
-<style is:global>
-
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-		color-scheme: dark light;
-	}
-
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='description' content='Astro description' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body class='bg-gray-900 min-h-screen pb-32'>
+    <Header />
+    <main class='max-w-5xl px-4 m-auto'>
+      <slot />
+    </main>
+  </body>
 	
+	<style is:global>
+    html {
+			color-scheme: dark light;
 
-</style>
+    }
+		p {
+			color: LightSteelBlue;
+}
+		h1{
+			color:MediumTurquoise;
+		}
+
+		h2{
+			color:PowderBlue;
+		}
+  </style>
+</html>
